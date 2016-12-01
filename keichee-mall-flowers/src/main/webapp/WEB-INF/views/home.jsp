@@ -7,27 +7,63 @@
 
 <script src="scripts/jquery-3.1.1.min.js"></script>
 <script src="externals/semantic-ui/semantic.js"></script>
+<script src="scripts/home.js"></script>
 <link rel="stylesheet" type="text/css" href="externals/semantic-ui/semantic.css"></link>
+<link rel="stylesheet" type="text/css" href="styles/keichee-mall-flowers.css"></link>
 
 
 </head>
 <body>
 
+	<div class="window container">
 
-	<!-- TOP 메뉴  -->
-	<div class="ui stackable container menu">
-		<div class="item left"><img src=""></div>
-		<a class="item right">aaa</a>
-		<a class="item right">LogIn</a>
-		<a class="item right">Sign-in</a>
+
+		<div class="left container">
+			<h3>Flower Gemma</h3>
+		</div>
+
+		<div class="center container">
+			<!-- Menu Container Start -->
+			<div class="item ">
+				<img src="">
+			</div>
+			<div class="ui four item stackable container menu ">
+				<a class="item ">Bouquet</a> <a class="item ">Dried</a> <a class="item ">Succulent</a> <a class="item ">Seeds</a>
+			</div>
+			<!-- Menu Container End -->
+
+			<!-- Contents Container Start -->
+			<div class="ui container contents">
+
+				<!-- Event informations -->
+				<div class="ui container events">
+					<button class="circular ui icon button">
+						<i class="icon left arrow"></i>
+					</button>
+					
+					<img class="ui image slide fluid" src="images/event_test_1.jpg" width="900"> 
+					<img class="ui image slide fluid hidden" src="images/event_test_2.jpg" width="900">
+					<img class="ui image slide fluid hidden" src="images/event_test_3.jpg" width="900">
+
+					<button class="circular ui icon button">
+						<i class="icon right arrow"></i>
+					</button>
+				</div>
+
+				<!-- Recommended products -->
+				<div class="ui container recommends"></div>
+
+
+			</div>
+			<!-- Contents Container End -->
+		</div>
+
+		<div class="right container">
+			<div class="right top item">
+				<input type="button" class="ui button mini" value="LogIn"> <input type="button" class="ui button mini" value="Sign-in">
+			</div>
+		</div>
 	</div>
-	
-	<!-- BOTTOM 컨테이너 -->	
-	<div class="ui container">
-	
-		
-	</div>
-	
 </body>
 </html>
 
