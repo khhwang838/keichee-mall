@@ -7,7 +7,7 @@
 
 <script src="scripts/jquery-3.1.1.min.js"></script>
 <script src="externals/semantic-ui/semantic.js"></script>
-<script src="scripts/home.js"></script>
+<script src="scripts/home/home.js"></script>
 <link rel="stylesheet" type="text/css" href="externals/semantic-ui/semantic.css"></link>
 <link rel="stylesheet" type="text/css" href="styles/keichee-mall-flowers.css"></link>
 
@@ -37,17 +37,26 @@
 
 				<!-- Event informations -->
 				<div class="ui container events">
-					<button class="circular ui icon button">
-						<i class="icon left arrow"></i>
-					</button>
 					
-					<img class="ui image slide fluid" src="images/event_test_1.jpg" width="900"> 
-					<img class="ui image slide fluid hidden" src="images/event_test_2.jpg" width="900">
-					<img class="ui image slide fluid hidden" src="images/event_test_3.jpg" width="900">
+					<img class="ui image slide fluid" src="images/event_test_1.jpg" width=100%;> 
+					<img class="ui image slide fluid" src="images/event_test_2.jpg" width=100%;>
+					<img class="ui image slide fluid" src="images/event_test_3.jpg" width=100%;>
 
-					<button class="circular ui icon button">
-						<i class="icon right arrow"></i>
-					</button>
+					<div class="overlap button left">
+						<button class="circular ui icon button">
+							<i class="icon left arrow"></i>
+						</button>
+					</div>
+					<div class="overlap button right">
+						<button class="circular ui icon button">
+							<i class="icon right arrow"></i>
+						</button>
+					</div>
+					<div class="overlap button close">
+						<button class="ui icon button mini" >
+							<i class="icon right close"></i>
+						</button>
+					</div>
 				</div>
 
 				<!-- Recommended products -->

@@ -3,10 +3,13 @@
 html body {width:100%;height:100%;}
 
 .left.container {width:17.5%;height:100%;float:left;padding:15px 15px 15px 15px;}
-.center.container {border:black 2px solid; width:65%;height:100%;display:inline-block;margin-left:auto !important;margin-right:auto !important;}
+.center.container {width:65%;height:100%;display:inline-block;margin-left:auto !important;margin-right:auto !important;}
 .right.container {width:17.5%;height:100%;float:right;padding:15px 15px 15px 15px;}
 .right.item {float:right;}
 
-.ui.container.events.ui.icon.button.arrow.left {display:flex;}
-.ui.image.slide {display:inline-flex;}
-.ui.container.events.ui.icon.button.arrow.right {display:inline-flex;}
+.events > .image.slide {display:none;}
+
+.events{position:relative;}
+.overlap.button.left {position:absolute;top:45%;left:20px;}
+.overlap.button.right {position:absolute;top:45%;right:20px;}
+.overlap.button.close {position:absolute;top:0;right:0;}
