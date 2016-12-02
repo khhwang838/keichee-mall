@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 import com.keichee.flowers.constants.IConstants;
 
 @Component
-public class CommonInfoManager implements IConstants {
+public class SessionInfo implements IConstants {
 
 	final Logger logger = LoggerFactory.getLogger(getClass());
 

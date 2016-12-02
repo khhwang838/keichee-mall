@@ -42,7 +42,7 @@
 			<mvc:exclude-mapping path="/libs/**" />
 			<mvc:exclude-mapping path="/scripts/**" />
 			<mvc:exclude-mapping path="/styles/**" />
-			<bean class="com.keichee.flowers.HttpRequestInterceptor" /> <!-- HandlerInterceptor 인터페이스를 구현한 클래스 -->
+			<bean class="com.keichee.flowers.core.HttpRequestInterceptor" /> <!-- HandlerInterceptor 인터페이스를 구현한 클래스 -->
 		</mvc:interceptor>
 	</mvc:interceptors>
 
