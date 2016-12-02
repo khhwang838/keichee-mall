@@ -1,7 +1,7 @@
 /**
  * Created on 2016. 9. 4. by Kihyun Hwang
  */
-package com.keichee.flowers;
+package com.keichee.flowers.core;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,7 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import com.keichee.flowers.component.CommonInfoManager;
+import com.keichee.flowers.component.SessionInfo;
 import com.keichee.flowers.constants.IConstants;
 import com.keichee.utils.GuidUtils;
 
@@ -30,13 +30,13 @@ public class HttpRequestInterceptor extends HandlerInterceptorAdapter {
 	private final List<String> SKIP_LOGIN_CHECK_URI_LIST = new ArrayList<>(Arrays.asList("super_login", "login", "user_info/add", "influencer_info/add"));
 
 	@Autowired
-	private CommonInfoManager commonInfoManager;
+	private SessionInfo sessionInfo;
 	
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
 		logger.debug("------------------------------------------------------------------");
-		logger.debug(" START : Request = {}, {}", request.getRequestURI(), request.getMethod());
+		logger.debug(" START : {}, {}", request.getRequestURI(), request.getMethod());
 		logger.debug("------------------------------------------------------------------");
 
 		final HttpSession session = request.getSession(false);
@@ -49,10 +49,10 @@ public class HttpRequestInterceptor extends HandlerInterceptorAdapter {
 			String userId = (String) session.getAttribute(IConstants.SESSION_INFO.USER_ID);
 			String roleId = (String) session.getAttribute(IConstants.SESSION_INFO.ROLE_ID);
 			Locale locale = (Locale) session.getAttribute(IConstants.SESSION_INFO.LOCALE);
-			commonInfoManager.setInfo(guid, userId, roleId, locale);
+			sessionInfo.setInfo(guid, userId, roleId, locale);
 		}
 
-		logger.debug("CommonInfoManager: {}", commonInfoManager);
+		logger.debug("SessionInfo: {}", sessionInfo);
 		return true;
 	}
 
