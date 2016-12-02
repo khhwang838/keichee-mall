@@ -19,8 +19,8 @@
 		<div class="top container">
 			<h3>Flower Gemma</h3>
 			<div class="right item">
-				<input type="button" class="ui button mini" value="LogIn"> 
-				<input type="button" class="ui button mini" value="Sign-in">
+				<input type="button" class="ui button basic mini" value="LogIn"> 
+				<input type="button" class="ui button basic mini" value="Sign-in">
 			</div>
 		</div>
 
