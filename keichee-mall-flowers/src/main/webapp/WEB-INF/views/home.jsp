@@ -19,7 +19,10 @@
 		<div class="top container">
 			<h3>Flower Gemma</h3>
 			<div class="right item">
-				<input type="button" class="ui button basic mini" value="LogIn"> 
+				<div class="ui icon input mini">
+					<input type="text" placeholder="Search..."> <i class="search link icon"></i>
+				</div>
+				<input type="button" class="ui button basic mini" value="LogIn">
 				<input type="button" class="ui button basic mini" value="Sign-in">
 			</div>
 		</div>
