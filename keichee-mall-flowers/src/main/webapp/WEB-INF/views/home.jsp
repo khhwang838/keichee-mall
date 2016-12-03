@@ -29,8 +29,34 @@
 
 		<div class="main container">
 			<!-- Menu Container Start -->
-			<div class="ui four item stackable container menu ">
-				<a class="item ">Bouquet</a> <a class="item ">Dried</a> <a class="item ">Succulent</a> <a class="item ">Seeds</a>
+			<div class="ui menu four container">
+				<ul class="">
+					<li><a class="item">Bouquet</a>
+						<ul class="submenu">
+							<li><a>Bouquet1</a></li>
+							<li><a>Bouquet2</a></li>
+							<li><a>Bouquet3</a></li>
+						</ul></li>
+
+					<li><a class="item">Dried</a>
+						<ul class="submenu">
+							<li><a>Dried1</a></li>
+							<li><a>Dried2</a></li>
+							<li><a>Dried3</a></li>
+						</ul></li>
+					<li><a class="item">Succulent</a>
+						<ul class="submenu">
+							<li><a>Succulent1</a></li>
+							<li><a>Succulent2</a></li>
+							<li><a>Succulent3</a></li>
+						</ul></li>
+					<li><a class="item">Seeds</a>
+						<ul class="submenu">
+							<li><a>Seeds1</a></li>
+							<li><a>Seeds2</a></li>
+							<li><a>Seeds3</a></li>
+						</ul></li>
+				</ul>
 			</div>
 			<!-- Menu Container End -->
 
@@ -56,11 +82,13 @@
 					</div>
 				</div>
 
+				<!-- Divider -->
 				<div class="ui divider"></div>
 
 
-				<div class="ui container products">
-					<div class="header best">
+				<div class="ui container products four">
+					<!-- Best Products -->
+					<div class="header">
 						<h2>Best 상품</h2>
 					</div>
 					<div class="ui card">
@@ -127,9 +155,77 @@
 							<div class="description">뉴욕 스타일 2017 신상 부케</div>
 						</div>
 					</div>
+					
+					<!-- Divider -->
+					<div class="ui divider"></div>
+					
+					<!-- Recommended products -->
+					<div class="header">
+						<h2>추천 상품</h2>
+					</div>
+					<div class="ui card">
+						<div class="image">
+							<img src="/images/simple_white.jpg">
+						</div>
+						<div class="content">
+							<a class="header">Simple White</a>
+							<div class="meta">
+								<span class="price">$99.99</span>
+							</div>
+							<div class="description">Texas 스타일 2017 신상 부케</div>
+						</div>
+					</div>
+					
+					<div class="ui card">
+						<div class="image">
+							<img src="/images/pure_white.jpg">
+						</div>
+						<div class="content">
+							<a class="header">Pure White</a>
+							<div class="meta">
+								<span class="price">$89.99</span>
+							</div>
+							<div class="description">뉴욕 스타일 2017 신상 부케</div>
+						</div>
+					</div>
+					
+					<!-- Divider -->
+					<div class="ui divider"></div>
+					
+					<!-- Recommended products -->
+					<div class="header">
+						<h2>계절 상품</h2>
+					</div>
+					<div class="ui card">
+						<div class="image">
+							<img src="/images/simple_white.jpg">
+						</div>
+						<div class="content">
+							<a class="header">Simple White</a>
+							<div class="meta">
+								<span class="price">$99.99</span>
+							</div>
+							<div class="description">Texas 스타일 2017 신상 부케</div>
+						</div>
+					</div>
+					
+					<div class="ui card">
+						<div class="image">
+							<img src="/images/pure_white.jpg">
+						</div>
+						<div class="content">
+							<a class="header">Pure White</a>
+							<div class="meta">
+								<span class="price">$89.99</span>
+							</div>
+							<div class="description">뉴욕 스타일 2017 신상 부케</div>
+						</div>
+					</div>
 				</div>
-				<!-- Recommended products -->
-				<div class="ui container recommends"></div>
+				
+				
+				
+				</div>
 
 
 			</div>
