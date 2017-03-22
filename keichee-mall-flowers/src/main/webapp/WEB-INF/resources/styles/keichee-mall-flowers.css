@@ -118,7 +118,7 @@ ul li ul li:hover {
 
 .ui.card {
 	display: inline-block;
-	margin: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 0px;
 }
 .ui.container.products.four > .ui.card {width:23%;}
 /* Products Container End */
