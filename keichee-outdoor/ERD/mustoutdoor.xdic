@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tm:TermDictionary xmlns:tm="http://exerd.com/term-model" version="1.1">
+  <term name="사용자" physicalName="USER"/>
+  <term name="ID" physicalName="ID"/>
+  <term name="이름" physicalName="NM"/>
+  <term name="명" physicalName="NM"/>
+  <term name="타입" physicalName="TYPE"/>
+  <term name="일시" physicalName="DTTM"/>
+  <term name="캠핑" physicalName="CAMPING"/>
+  <term name="분류" physicalName="TYPE"/>
+  <term name="코드" physicalName="CD"/>
+  <term name="등록" physicalName="REG"/>
+  <term name="수정" physicalName="UPDT"/>
+  <term name="인증" physicalName="ATHN"/>
+  <term name="권한" physicalName="PERM"/>
+</tm:TermDictionary>
